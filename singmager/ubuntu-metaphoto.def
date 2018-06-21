@@ -1,11 +1,11 @@
 Bootstrap: debootstrap
 OSVersion: bionic
 MirrorURL: http://distrib-coffee.ipsl.jussieu.fr/pub/linux/ubuntu/
-
-%files
-    install-software.sh /usr/local/bin
+include git
 
 %post
-    /usr/local/bin/install-software.sh
+    mkdir -p /data/p/photo/metaphoto
+    git clone https://github.com/Githubien/imageprofonde.git
+    /data/p/photo/metaphoto/imageprofonde/singmager/install-software.sh
     
 
