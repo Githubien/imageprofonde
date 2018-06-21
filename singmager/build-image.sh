@@ -7,7 +7,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 rm -rf /tmp/test
-singularity build --sandbox /tmp/test /data/p/photo/metaphoto/singimager/ubuntu-metaphoto.def
+singularity build --sandbox /tmp/test ubuntu-metaphoto.def
 
 echo "singularity shell --writable /tmp/test"
 
