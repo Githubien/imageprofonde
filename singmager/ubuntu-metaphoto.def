@@ -1,0 +1,11 @@
+Bootstrap: debootstrap
+OSVersion: bionic
+MirrorURL: http://distrib-coffee.ipsl.jussieu.fr/pub/linux/ubuntu/
+
+%files
+    install-software.sh /usr/local/bin
+
+%post
+    /usr/local/bin/install-software.sh
+    
+
