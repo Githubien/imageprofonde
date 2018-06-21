@@ -1,7 +1,7 @@
 Bootstrap: debootstrap
 OSVersion: bionic
 MirrorURL: http://distrib-coffee.ipsl.jussieu.fr/pub/linux/ubuntu/
-include git
+include: git
 
 %post
     mkdir -p /data/p/photo/metaphoto
